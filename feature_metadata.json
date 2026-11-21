@@ -1,0 +1,554 @@
+{
+  "classification": [
+    {
+      "name": "age_level",
+      "type": "category",
+      "default": "Mature",
+      "options": [
+        "Mature",
+        "Middle",
+        "Senior",
+        "Young"
+      ]
+    },
+    {
+      "name": "gender",
+      "type": "category",
+      "default": "Female",
+      "options": [
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "name": "smoking",
+      "type": "category",
+      "default": "Never",
+      "options": [
+        "Never",
+        "Former",
+        "Current"
+      ]
+    },
+    {
+      "name": "age",
+      "type": "number",
+      "default": 50.0,
+      "min": 2.0,
+      "max": 89.0
+    },
+    {
+      "name": "age_normalized",
+      "type": "number",
+      "default": 0.551724,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "bmi",
+      "type": "number",
+      "default": 27.32,
+      "min": 10.01,
+      "max": 95.69
+    },
+    {
+      "name": "HbA1c_level",
+      "type": "number",
+      "default": 5.8,
+      "min": 3.5,
+      "max": 9.0
+    },
+    {
+      "name": "glucose",
+      "type": "number",
+      "default": 137.0,
+      "min": 70.0,
+      "max": 300.0
+    },
+    {
+      "name": "cholesterol",
+      "type": "number",
+      "default": 225.0,
+      "min": 150.0,
+      "max": 300.0
+    },
+    {
+      "name": "sleep_hours",
+      "type": "number",
+      "default": 6.97518518518519,
+      "min": 4.0,
+      "max": 10.0
+    },
+    {
+      "name": "triglycerides",
+      "type": "number",
+      "default": 178.0,
+      "min": 50.0,
+      "max": 400.0
+    },
+    {
+      "name": "physical_activity",
+      "type": "category",
+      "default": "High",
+      "options": [
+        "High",
+        "Moderate",
+        "Low"
+      ]
+    },
+    {
+      "name": "family_history",
+      "type": "category",
+      "default": "No",
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "stress_level",
+      "type": "category",
+      "default": "High",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "name": "low_hdl_cholesterol",
+      "type": "category",
+      "default": "No",
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "high_ldl_cholesterol",
+      "type": "category",
+      "default": "Yes",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "blood_pressure",
+      "type": "number",
+      "default": 149.713319667303,
+      "min": 120.0,
+      "max": 180.0
+    },
+    {
+      "name": "high_blood_pressure",
+      "type": "category",
+      "default": "Yes",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "sugar_consumption",
+      "type": "category",
+      "default": "Low",
+      "options": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "name": "crp_level",
+      "type": "number",
+      "default": 7.45848313615769,
+      "min": 0.0036467123625,
+      "max": 14.9970867307103
+    },
+    {
+      "name": "homocysteine_level",
+      "type": "number",
+      "default": 12.4884073908792,
+      "min": 5.00023648835611,
+      "max": 19.99903699209
+    },
+    {
+      "name": "systolic_bp",
+      "type": "number",
+      "default": 134.167413213886,
+      "min": 90.0,
+      "max": 179.0
+    },
+    {
+      "name": "diastolic_bp",
+      "type": "number",
+      "default": 89.5045871559633,
+      "min": 60.0,
+      "max": 119.0
+    },
+    {
+      "name": "alcohol_intake",
+      "type": "number",
+      "default": 14.9761334473909,
+      "min": 0.0,
+      "max": 30.0
+    },
+    {
+      "name": "salt_intake",
+      "type": "number",
+      "default": 8.4776,
+      "min": 2.0,
+      "max": 15.0
+    },
+    {
+      "name": "heart_rate",
+      "type": "number",
+      "default": 74.4872471416007,
+      "min": 50.0,
+      "max": 99.0
+    },
+    {
+      "name": "hdl",
+      "type": "number",
+      "default": 64.6506550218341,
+      "min": 30.0,
+      "max": 99.0
+    },
+    {
+      "name": "ldl",
+      "type": "number",
+      "default": 129.882608695652,
+      "min": 70.0,
+      "max": 189.0
+    },
+    {
+      "name": "education_level",
+      "type": "category",
+      "default": "Tertiary",
+      "options": [
+        "Tertiary",
+        "Secondary",
+        "Primary"
+      ]
+    },
+    {
+      "name": "employment_status",
+      "type": "category",
+      "default": "Retired",
+      "options": [
+        "Retired",
+        "Unemployed",
+        "Employed"
+      ]
+    }
+  ],
+  "regression": [
+    {
+      "name": "age_level",
+      "type": "category",
+      "default": "Mature",
+      "options": [
+        "Mature",
+        "Middle",
+        "Senior",
+        "Young"
+      ]
+    },
+    {
+      "name": "gender",
+      "type": "category",
+      "default": "Female",
+      "options": [
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "name": "smoking",
+      "type": "category",
+      "default": "Never",
+      "options": [
+        "Never",
+        "Former",
+        "Current"
+      ]
+    },
+    {
+      "name": "age",
+      "type": "number",
+      "default": 50.0,
+      "min": 2.0,
+      "max": 89.0
+    },
+    {
+      "name": "age_normalized",
+      "type": "number",
+      "default": 0.551724,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "HbA1c_level",
+      "type": "number",
+      "default": 5.8,
+      "min": 3.5,
+      "max": 9.0
+    },
+    {
+      "name": "glucose",
+      "type": "number",
+      "default": 137.0,
+      "min": 70.0,
+      "max": 300.0
+    },
+    {
+      "name": "cholesterol",
+      "type": "number",
+      "default": 225.0,
+      "min": 150.0,
+      "max": 300.0
+    },
+    {
+      "name": "sleep_hours",
+      "type": "number",
+      "default": 6.97518518518519,
+      "min": 4.0,
+      "max": 10.0
+    },
+    {
+      "name": "triglycerides",
+      "type": "number",
+      "default": 178.0,
+      "min": 50.0,
+      "max": 400.0
+    },
+    {
+      "name": "physical_activity",
+      "type": "category",
+      "default": "High",
+      "options": [
+        "High",
+        "Moderate",
+        "Low"
+      ]
+    },
+    {
+      "name": "family_history",
+      "type": "category",
+      "default": "No",
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "stress_level",
+      "type": "category",
+      "default": "High",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "name": "low_hdl_cholesterol",
+      "type": "category",
+      "default": "No",
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "high_ldl_cholesterol",
+      "type": "category",
+      "default": "Yes",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "blood_pressure",
+      "type": "number",
+      "default": 149.713319667303,
+      "min": 120.0,
+      "max": 180.0
+    },
+    {
+      "name": "high_blood_pressure",
+      "type": "category",
+      "default": "Yes",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "sugar_consumption",
+      "type": "category",
+      "default": "Low",
+      "options": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "name": "crp_level",
+      "type": "number",
+      "default": 7.45848313615769,
+      "min": 0.0036467123625,
+      "max": 14.9970867307103
+    },
+    {
+      "name": "homocysteine_level",
+      "type": "number",
+      "default": 12.4884073908792,
+      "min": 5.00023648835611,
+      "max": 19.99903699209
+    },
+    {
+      "name": "systolic_bp",
+      "type": "number",
+      "default": 134.167413213886,
+      "min": 90.0,
+      "max": 179.0
+    },
+    {
+      "name": "diastolic_bp",
+      "type": "number",
+      "default": 89.5045871559633,
+      "min": 60.0,
+      "max": 119.0
+    },
+    {
+      "name": "alcohol_intake",
+      "type": "number",
+      "default": 14.9761334473909,
+      "min": 0.0,
+      "max": 30.0
+    },
+    {
+      "name": "salt_intake",
+      "type": "number",
+      "default": 8.4776,
+      "min": 2.0,
+      "max": 15.0
+    },
+    {
+      "name": "heart_rate",
+      "type": "number",
+      "default": 74.4872471416007,
+      "min": 50.0,
+      "max": 99.0
+    },
+    {
+      "name": "hdl",
+      "type": "number",
+      "default": 64.6506550218341,
+      "min": 30.0,
+      "max": 99.0
+    },
+    {
+      "name": "ldl",
+      "type": "number",
+      "default": 129.882608695652,
+      "min": 70.0,
+      "max": 189.0
+    },
+    {
+      "name": "education_level",
+      "type": "category",
+      "default": "Tertiary",
+      "options": [
+        "Tertiary",
+        "Secondary",
+        "Primary"
+      ]
+    },
+    {
+      "name": "employment_status",
+      "type": "category",
+      "default": "Retired",
+      "options": [
+        "Retired",
+        "Unemployed",
+        "Employed"
+      ]
+    }
+  ],
+  "classification_features": [
+    "age_level",
+    "gender",
+    "smoking",
+    "age",
+    "age_normalized",
+    "bmi",
+    "HbA1c_level",
+    "glucose",
+    "cholesterol",
+    "sleep_hours",
+    "triglycerides",
+    "physical_activity",
+    "family_history",
+    "stress_level",
+    "low_hdl_cholesterol",
+    "high_ldl_cholesterol",
+    "blood_pressure",
+    "high_blood_pressure",
+    "sugar_consumption",
+    "crp_level",
+    "homocysteine_level",
+    "systolic_bp",
+    "diastolic_bp",
+    "alcohol_intake",
+    "salt_intake",
+    "heart_rate",
+    "hdl",
+    "ldl",
+    "education_level",
+    "employment_status",
+    "pulse_pressure",
+    "cholesterol_ratio"
+  ],
+  "regression_features": [
+    "age_level",
+    "gender",
+    "smoking",
+    "age",
+    "age_normalized",
+    "HbA1c_level",
+    "glucose",
+    "cholesterol",
+    "sleep_hours",
+    "triglycerides",
+    "physical_activity",
+    "family_history",
+    "stress_level",
+    "low_hdl_cholesterol",
+    "high_ldl_cholesterol",
+    "blood_pressure",
+    "high_blood_pressure",
+    "sugar_consumption",
+    "crp_level",
+    "homocysteine_level",
+    "systolic_bp",
+    "diastolic_bp",
+    "alcohol_intake",
+    "salt_intake",
+    "heart_rate",
+    "hdl",
+    "ldl",
+    "education_level",
+    "employment_status",
+    "pulse_pressure",
+    "cholesterol_ratio"
+  ],
+  "engineered_features": [
+    "pulse_pressure",
+    "cholesterol_ratio"
+  ]
+}
