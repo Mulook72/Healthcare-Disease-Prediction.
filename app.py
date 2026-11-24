@@ -1,4 +1,4 @@
-
+import io
 import json
 from pathlib import Path
 import sys
@@ -14,7 +14,12 @@ import pandas as pd
 
 
 BASE_DIR = Path(__file__).parent
-CLASSIFIER = joblib.load(BASE_DIR / "classifier.pkl")
+classifier_bytes = b"".join(
+    (BASE_DIR / f"classifier.part{i}").read_bytes()
+    for i in range(1, 4)
+)
+
+CLASSIFIER = joblib.load(io.BytesIO(classifier_bytes))
 REGRESSOR = joblib.load(BASE_DIR / "regressor.pkl")
 with open(BASE_DIR / "feature_metadata.json", "r", encoding="utf-8") as f:
     META = json.load(f)
