@@ -1,9 +1,17 @@
+
 import json
 from pathlib import Path
+import sys
+import importlib.util
+import streamlit as st
+
+st.write("Python version:", sys.version)
+st.write("Python location:", sys.executable)
+st.write("Joblib available:", importlib.util.find_spec("joblib"))
 
 import joblib
 import pandas as pd
-import streamlit as st
+
 
 BASE_DIR = Path(__file__).parent
 CLASSIFIER = joblib.load(BASE_DIR / "classifier.pkl")
